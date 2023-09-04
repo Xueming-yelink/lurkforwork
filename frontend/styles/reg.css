@@ -1,0 +1,141 @@
+body{
+    background-color: #f3f2ee;
+}
+#regist .type_area{
+    width: 1300px;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+#regist .lhead{
+    padding: 20px 0px;
+    margin-bottom: 30px;
+}
+#regist .lhead img{
+    max-width: 175px;
+    max-height: 35px;
+}
+#regist .lhead span{
+    font-size: 30px;
+    font-weight: 600;
+}
+#regist .title1{
+    color: #0a66c2;
+}
+#regist .title2{
+    background-color: #0a66c2;
+    color: white;
+    border-radius: 6px;
+    padding: 0 5px;
+}
+#regist .central{
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+}
+#regist .rtitle{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#regist .reg_form{
+    background-color: white;
+    border-radius: 6px;
+    display: flex;
+    padding: 20px 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#regist .ftext{
+    width: 400px;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0;
+}
+#regist .oritem{
+    display: flex;
+    width: 350px;
+    font-size: 15px;
+    align-items: center;
+    border: 1px solid #8e8e8e;
+    padding: 8px 0;
+    border-radius: 18px;
+    justify-content: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+#regist .oritem img{
+    width: 25px;
+    height: 25px;
+    margin-right: 6px;
+}
+#regist .ritem{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 20px;
+}
+#regist .ritem span{
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+#regist .ritem input{
+    border: 1px solid #666666;
+    width: 360px;
+    height: 35px;
+    padding-left: 2px;
+    outline:none;
+    font-size: 15px;
+    border-radius: 6px;
+}
+#regist .paw{
+    width: 360px;
+    border: 1px solid #666666;
+    border-radius: 6px;
+}
+#regist .paw input{
+    border: 0;
+    width: 83%;
+}
+#regist .show{
+    color: #2b63ba;
+    padding: 0 3px;
+    cursor: pointer;
+}
+#regist .fpaw{
+    text-align: center;
+}
+#regist .fpaw a{
+    color: #0a66c2;
+    font-size: 15px;
+    text-decoration: underline;
+}
+#regist .regbtn{
+    width: 360px;
+    height: 40px;
+    display: block;
+    cursor: pointer;
+    background-color: #2b63ba;
+    color: white;
+    border:  0;
+    border-radius: 18px;
+    font-size: 18px;
+    margin: 10px auto 0;
+}
+#regist .obottom{
+    margin-top: 5px;
+    font-size: 17px;
+}
+#regist .obottom a,#regist .obottom2 a{
+    color: #0a66c2;
+}
+#regist .obottom2{
+    font-size: 14px;
+    margin-top: 20px;
+    text-align: center;
+}
+.error{
+    color: #d11124;
+    font-size: 16px;
+    padding-bottom: 20px;
+    display: none;
+}

@@ -1,0 +1,143 @@
+#login .type_area{
+    width: 1300px;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+#login .lhead{
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#login .lhead img{
+    max-width: 175px;
+    max-height: 35px;
+}
+#login .lhead span{
+    font-size: 30px;
+    font-weight: 600;
+}
+#login .title1{
+    color: #0a66c2;
+}
+#login .title2{
+    background-color: #0a66c2;
+    color: white;
+    border-radius: 6px;
+    padding: 0 5px;
+}
+#login .reg{
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 20px;
+}
+#login .login{
+    font-size: 18px;
+    font-weight: 600;
+    color: #0a66c2;
+    border: 1px solid #7a86a5;
+    padding: 10px 20px;
+    border-radius: 18px;
+}
+#login .lbody{
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+#login .ltitle{
+    font-size: 50px;
+    color: #9f8d85;
+    margin-bottom: 20px;
+}
+#login .lbody_right img{
+    width: 560px;
+    height: 526px;
+}
+#login .lbody_left{
+    width: 600px;
+}
+#login .log_form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#login .litem{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+#login .litem span{
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+#login .litem input{
+    border: 1px solid #666666;
+    width: 470px;
+    height: 35px;
+    padding-left: 2px;
+    outline:none;
+    font-size: 15px;
+    border-radius: 6px;
+}
+#login .paw{
+    width: 470px;
+    border: 1px solid #666666;
+    border-radius: 6px;
+}
+#login .paw input{
+    border: 0;
+    width: 86%;
+}
+#login .show{
+    color: #2b63ba;
+    padding: 0 5px;
+    cursor: pointer;
+}
+#login .fpaw a{
+    color: #2b63ba;
+    font-size: 15px;
+}
+#login .logbtn{
+    width: 470px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #2b63ba;
+    color: white;
+    border:  0;
+    border-radius: 18px;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+#login .ftext{
+    width: 470px;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0;
+}
+#login .oritem{
+    display: flex;
+    width: 470px;
+    font-size: 15px;
+    border: 1px solid #8e8e8e;
+    padding: 10px 0;
+    align-items: center;
+    border-radius: 18px;
+    justify-content: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+#login .oritem img{
+    width: 25px;
+    height: 25px;
+    margin-right: 6px;
+}
+.error{
+    color: #d11124;
+    font-size: 16px;
+    padding-bottom: 20px;
+    display: none;
+}

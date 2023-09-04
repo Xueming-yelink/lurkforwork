@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SPA</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/personal.css">
+    <link rel="stylesheet" href="./styles/login.css">
+    <link rel="stylesheet" href="./styles/reg.css">
+</head>
+
+<body>
+    <div>
+        <!-- top -->
+        <div class="htop" id="htop">
+            <div class="topcont">
+                <div class="top_left"><a href="#index" class="logo">Work</a> <div class="litem"><img src="./img/search.png"> <input type="text" placeholder="Search" id="user_search" /></div></div>
+                <div class="top_right">
+                    <div class="toplist">
+                        <a href="#index" class="mitem mitem_sct"><img src="./img/home2.png"><span>Home</span></a>
+                        <a href="javascript:;" class="mitem notify"><img src="./img/notice.png"><span>Notifications</span><i class="badge"></i></a>
+                        <a href="javascript:;" class="mitem mitem2" id="menu">
+                            <img src="./img/head.png" class="user_photo"><span class="userimg"><span>Me</span><img src="./img/triangle.png"></span>
+                            <div class="list" id="list">
+                                <div class="list_top">
+                                    <div class="list_top1">
+                                        <img src="./img/head.png" class="user_photo">
+                                        <div class="list_top2">
+                                            <div class="list_top2_1 user_name"></div>
+                                            <!-- <div class="list_top2_2">Student</div> -->
+                                        </div>
+                                    </div>
+                                    <div class="tohome"><a href="#profile">View Profile</a></div>
+                                </div>
+                                <div class="logout"><a href="javascript:;">Sign out</a></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="index">
+            <!-- central -->
+            <div class="central">
+                <!-- left -->
+                <div class="mleft">
+                    <div class="usercard unify">
+                        <div class="card_item1">
+                            <div class="user2"></div>
+                            <a href="#profile"><img src="./img/head.png" class="user_photo"></a> 
+                            <div class="user1">
+                                <span class="user_name"></span>
+                                <!-- <span>Student</span> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- middle -->
+                <div class="mmiddle">
+                    <!-- head -->
+                    <div class="mdtop unify sendpost">
+                        <div class="mdtop_item1"><a href="./personal.html"><img src="./img/head.png" class="user_photo"></a><input type="text" class="job_title" placeholder="Job title"></div>
+                        <div class="mdtop_item1 mdtop_item3"><input type="text" class="job_desc" placeholder="Job description"></div>
+                        <div class="mdtop_item4">
+                            <img src="" alt="" class="post_img">
+                        </div>
+                        <div class="mdtop_item2">
+                            <label class="mdtop_item2_2" style="cursor:pointer;"><img src="./img/photo.png"><span>Photo</span><input type="file" style="display: none;" id="upload_img"></label>
+                            <a href="javascript:;" class="mdtop_item2_2 write_art"><img src="./img/write.png"><span>Post</span></a> 
+                        </div>
+                    </div>
+
+                    <!-- job card -->
+                    <div class="pcard_item"></div>
+                </div>
+                <!-- right -->
+                <div class="mright">
+                    <!-- first card -->
+                    <div class="mritem1  unify">
+                        <!-- top -->
+                        <div class="mritem1_top">
+                            <div>Your NetWork</div>
+                        </div>
+                        <!-- middle -->
+                        <div class="mritem1_bot network_wrap"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- job edit -->
+            <div class="waibu" id="post_dialog">
+                <div class="neibu">
+                    <div class="nform">
+                        <img src="./img/cross.png" class="nerbuimg" id="job_close">
+                        <div class="netbu_title">Edit Job</div>
+                        <!-- <div class="netbu_title2">* lndicates required</div> -->
+                        <!-- list -->
+                        <form action="">
+                            <!-- input -->
+                            <div class="input_item">
+                                <span>Job Title</span>
+                                <input type="text" class="j_tit">
+                            </div>
+                            <div class="input_item">
+                                <span>Job Description</span>
+                                <input type="text" class="j_desc">
+                            </div>  
+                            <div class="input_item">
+                                <label for="up_img">
+                                    <img class="j_img" src="https://img1.tuhu.org/brand/ujAicoc1wXpy9I9JGq8H7g_w401_h562.jpeg" alt="">
+                                    <input id="up_img" type="file" style="display:none;" />
+                                </label>
+                            </div>
+                            
+                        </form>
+                        <div class="postbtn"><button type="button" class="job_edit_save">Save</button> </div>  
+                    </div>
+                </div>
+            </div>
+            <a href="javascript:;" id="top-back"><img src="./img/top.png"></a>
+        </div>
+
+        <div id="profile">
+            <!-- middle -->
+            <div class="central">
+                <!-- left -->
+                <div class="mleft">
+                    <!-- card1 -->
+                    <div class="card1 unify">
+                        <div class="card1_item1">
+                            <!-- background -->
+                            <div class="card1_item1_1"></div>
+
+                            <!-- user image -->
+                            <img class="card1_item1_img1" src="" id="open2">
+                            <div class="card1_item1_img2">Follow</div>
+                            <img class="card1_item1_img3" src="./img/edit.png" id="open">
+
+                            <div class="card1_item1_2">
+                                <span class="card1_item1_2_1 user_name"></span>
+                                <!-- <span class="card1_item1_2_2">Student</span> -->
+                                <!-- <span  class="card1_item1_2_3"> <span>Chongqing,China</span> <a href="javascript:;"> · Contact info</a> </span> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card2 -->
+                    <!-- <div class="card2 unify">
+                        <img class="card2_img1" src="./img/add.png">
+                        <img class="card2_img2" src="./img/edit.png">
+                        <div class="card2_title">Education</div>
+                        <div class="card2_body">
+                            <div class="card2_body_img"><a href="javascript:;"><img src="./img/tes11.png"></a></div>
+                            <div class="card2_item">
+                                <div class="card2_item1">UNSW</div>
+                                <div class="card2_item2">Master's degree,IT</div>
+                                <div class="card2_item3">2022 - 2023</div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- card3 -->
+                    <!-- <div class="card2 unify">
+                        <img class="card2_img2"  src="./img/edit.png">
+                        <div class="card2_title">About</div>
+                        <div class="card2_item2">Keep going</div>
+                    </div> -->
+                </div>
+            </div>
+            <!--pop up 1-->
+            <div class="waibu" id="waibu">
+                <div class="neibu">
+                    <div class="nform">
+                        <img src="./img/cross.png" class="nerbuimg" id="close">
+                        <div class="netbu_title">Edit intro</div>
+                        <!-- <div class="netbu_title2">* lndicates required</div> -->
+                        <!-- list -->
+                        <form action="">
+                            <!-- input -->
+                            <div class="input_item">
+                                <span>Name*</span>
+                                <input type="text" class="first_name">
+                            </div>
+                            <div class="input_item">
+                                <span>Email</span>
+                                <input type="text" class="email">
+                            </div>  
+                            <div class="input_item">
+                                <span>Password</span>
+                                <input type="text" class="password">
+                            </div>
+                            
+                        </form>
+                        <div class="postbtn"><button type="button" class="info_edit_save">Save</button> </div>  
+                    </div>
+                </div>
+            </div>
+            <!-- pop up 2-->
+            <div class="waibu" id="waibu2">
+                <div class="neibu">
+                    <div class="nform2">
+                        <img src="./img/cross.png" class="nerbuimg" id="close2">
+                        <div class="n2title">Profile photo</div>
+                        <div class="n2img">
+                            <img src="">
+                        </div>
+                        <div class="n2test2">
+                            <div class="n2test2_le">
+                                <label for="upload_photo" class="n2test2_item">
+                                    <img src="./img/camera2.png">
+                                    <span>Add photo</span>
+                                    <input type="file" id="upload_photo" style="display: none;">
+                                </label>
+                            </div>
+                            <div class="n2test2_le3">
+                                <div class="n2test2_item save_photo">
+                                    <img src="./img/trash.png">
+                                    <span>Save</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="login">
+            <div class="type_area">
+                <!-- top -->
+                <div class="lhead">
+                    <div><span class="title1">LurkFor </span> <span class="title2">Work</span></div>
+                    <div class="logreg">
+                        <a href="javascript:;" class="reg">sign in</a>
+                        <a href="javascript:;" class="login">login</a>
+                    </div>
+                </div>
+                <!-- body -->
+                <div class="lbody">
+                    <div class="lbody_left">
+                        <div class="ltitle">Your own professional community</div>
+                        <!-- list -->
+                        <div class="log_form">
+                            <div class="litem">
+                                <span>Email or mobile phone</span>
+                                <input class="phone" type="text">
+                            </div>
+                            <div class="litem">
+                                <span>password</span>
+                                <div class="paw">
+                                    <input class="pwd" type="password">
+                                    <span class="show">show</span>
+                                </div>
+                            </div>
+                            <div class="error"></div>
+                            <div class="logbtn">login</div>
+                        </div>
+                        <div class="oritem reg">No account? sing in now</div>
+                    </div>
+                    <div class="lbody_right">
+                        <img src="./body.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="regist">
+            <div class="type_area">
+                <!-- top -->
+                <div class="lhead">
+                    <div><span class="title1">LurkFor </span> <span class="title2">Work</span></div>
+                </div>
+                <div class="central">
+                    <div class="rbody">
+                        <div class="rtitle">Achieve professional life</div>
+                        <div class="reg_form">
+                            <div class="ritem">
+                                <span>Email</span>
+                                <input class="email" type="text">
+                            </div>
+                            <div class="ritem">
+                                <span>Password</span>
+                                <div class="paw">
+                                    <input class="pwd" type="password">
+                                    <span class="show">show</span>
+                                </div>
+                            </div>
+                            <div class="ritem">
+                                <span>Name</span>
+                                <input class="user_name" type="name">
+                            </div>
+                            <div class="error">error</div>
+                            <button type="submit" class="regbtn">Agree and join</button>
+                            <div class="obottom"><span>Have an account?</span> <a href="#login">login</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./src/router.js"></script>
+    <script src="./src/showtop.js"></script>
+    <script src="./src/gotop.js"></script>
+    <script src="./src/showmenu.js"></script>
+    <script src="./src/router_list.js"></script>
+</body>
+
+</html>
